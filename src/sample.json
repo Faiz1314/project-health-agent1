@@ -1,0 +1,17 @@
+{
+  "plannedDurationDays": 100,
+  "actualDurationDays": 112,
+
+  "plannedBudget": 100000,
+  "actualSpend": 85000,
+
+  "completedMilestones": 8,
+  "totalMilestones": 10,
+
+  "blockers": [
+    {
+      "title":"Vendor Delay",
+      "severity":"medium"
+    }
+  ]
+}
