@@ -51,26 +51,35 @@ Health-agent/
 * Python 3.10+
 * A Gemini API key. Get one from [Google AI Studio](https://aistudio.google.com/).
 
-### Installation
+### Quick Start
+
+We provide a convenient shell script `run.sh` that automatically sets up a Python virtual environment, installs dependencies, and runs the agent.
 
 1. Clone or navigate to the project directory:
    ```bash
    cd Health-agent
    ```
 
-2. Install dependencies:
+2. Run with your API key:
+   ```bash
+   GEMINI_API_KEY="your-api-key-here" ./run.sh
+   ```
+
+### Manual Run
+
+If you prefer to run manually without virtual environments:
+
+1. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-### Running the Agent
-
-1. Set your Gemini API key in your environment variables:
+2. Export your Gemini API key:
    ```bash
    export GEMINI_API_KEY="your-api-key-here"
    ```
 
-2. Run the entry point:
+3. Run the script:
    ```bash
    python main.py
    ```
