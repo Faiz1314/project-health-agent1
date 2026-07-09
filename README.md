@@ -1,15 +1,97 @@
-# health-agent
+# Project Health Reporting Agent (Python)
 
-To install dependencies:
+A Python-based AI agent that evaluates project health using deterministic metrics and generates human-readable executive summaries via the Gemini API.
 
-```bash
-bun install
+## Project Structure
+
+```text
+Health-agent/
+├── src/
+│   ├── detr/             # Deterministic metric scoring
+│   │   ├── blockers.py          # Penalty calculations based on blocker severity
+│   │   ├── budget_burn.py       # Actual vs planned budget burn calculation
+│   │   ├── milestone.py         # Milestone completion calculation
+│   │   └── schedule_slippage.py # Schedule slippage percentage and scoring
+│   ├── rag/              # Red / Amber / Green (RAG) classification & weights
+│   │   ├── classify.py          # Map final score to green, amber, or red
+│   │   ├── confidence.py        # Assessment confidence based on available data
+│   │   ├── score.py             # Weighted overall score calculation
+│   │   └── weight.py            # Metric weights definitions
+│   ├── ai/               # AI explanation layer
+│   │   ├── gemini.py            # Gemini integration via google-genai
+│   │   └── system_prompt.py     # Persona constraints for executive reporting
+│   ├── agent.py          # Main orchestrator
+│   └── sample.json       # Input configuration file
+├── main.py               # CLI Entry point
+├── requirements.txt      # Python dependencies
+└── .gitignore            # Git ignored files and directories
 ```
 
-To run:
+## How It Works
 
-```bash
-bun run index.ts
+1. **Deterministic Scoring**:
+   The agent calculates scores (0-100) for schedule, budget, milestones, and blockers using specific business rules defined in `src/detr/`.
+2. **Weighted Aggregation**:
+   It calculates an overall score by applying specific weights:
+   * Schedule: 30%
+   * Budget: 20%
+   * Milestone: 25%
+   * Blockers: 25%
+3. **RAG Classification**:
+   * **GREEN**: Score $\ge$ 80
+   * **AMBER**: 60 $\le$ Score < 80
+   * **RED**: Score < 60
+4. **AI Summary Generation**:
+   The calculated metrics are structured and sent to Gemini (`gemini-2.5-flash`) using a professional Project Delivery Manager prompt. The model explains the RAG status, identifies risks, and suggests recommended actions.
+
+## Getting Started
+
+### Prerequisites
+
+* Python 3.10+
+* A Gemini API key. Get one from [Google AI Studio](https://aistudio.google.com/).
+
+### Installation
+
+1. Clone or navigate to the project directory:
+   ```bash
+   cd Health-agent
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Running the Agent
+
+1. Set your Gemini API key in your environment variables:
+   ```bash
+   export GEMINI_API_KEY="your-api-key-here"
+   ```
+
+2. Run the entry point:
+   ```bash
+   python main.py
+   ```
+
+## Configuration
+
+You can customize the input project metrics in `src/sample.json`:
+
+```json
+{
+  "plannedDurationDays": 100,
+  "actualDurationDays": 112,
+  "plannedBudget": 100000,
+  "actualSpend": 85000,
+  "completedMilestones": 8,
+  "totalMilestones": 10,
+  "blockers": [
+    {
+      "title": "Vendor Delay",
+      "severity": "medium"
+    }
+  ]
+}
 ```
-
-This project was created using `bun init` in bun v1.3.11. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
