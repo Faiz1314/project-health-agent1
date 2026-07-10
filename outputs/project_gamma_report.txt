@@ -12,26 +12,32 @@ Metric Scores:
   budget                20
   milestone             25
   blockers              40
+  sentiment           20.0
+  velocity              15
 
 Executive Summary:
-### Executive Summary
-Project Gamma is currently rated **RED** due to significant schedule delays and budget overruns. Immediate management intervention is required to address resource availability and scope instability to prevent further slippage.
+**Executive Summary**
+Project Gamma is currently rated RED. The project is significantly behind schedule and over budget, with stakeholders expressing a critical loss of confidence in delivery and communication.
 
-### Reasoning
-The project is currently Red because it has exceeded its planned 60-day duration by 20 days and its $80,000 budget by $30,000. With only 4 of 10 milestones completed, the pace of delivery is insufficient. The combination of high-severity resource constraints and ongoing scope creep on module B has severely degraded performance across all tracked metrics, particularly schedule and budget.
+**Reasoning**
+The RED status reflects a comprehensive failure to meet performance targets across all key metrics:
+*   **Schedule & Velocity:** The project has exceeded its 60-day planned duration by 20 days while completing only 20 of 60 planned tasks, indicating poor execution velocity.
+*   **Financial:** Actual spend ($110,000) has exceeded the $80,000 budget.
+*   **Progress:** Milestone completion is low (4/10), compounded by high-severity blockers.
+*   **Sentiment:** Negative stakeholder feedback highlights poor communication and misalignment on expectations.
 
-### Key Risks
-*   **Resource Unavailability:** The high-severity blocker regarding missing client resources is preventing progress on critical project tasks.
-*   **Scope Instability:** Uncontrolled expansion of Module B is driving both the budget deficit and the schedule extension.
-*   **Delivery Momentum:** Only 40% of milestones are complete, despite the project duration being 33% longer than initially planned.
+**Key Risks**
+*   **Resource Dependency:** The "High" severity blocker regarding unavailable client resources is stalling progress.
+*   **Scope Instability:** Uncontrolled scope creep on Module B is directly impacting budget and timeline.
+*   **Stakeholder Erosion:** Continued failure to meet expectations is damaging the ongoing working relationship.
 
-### Recommended Actions
-1.  **Escalate Resource Blockers:** Facilitate an immediate meeting with client leadership to secure the necessary resources or formally adjust project timelines.
-2.  **Conduct Scope Review:** Perform a Change Control Board (CCB) review of Module B to baseline requirements and prevent further scope creep.
-3.  **Re-baseline Project Plan:** Develop a recovery schedule that reflects the current resource constraints and remaining milestone requirements.
-4.  **Financial Review:** Assess if the $110,000 current spend necessitates a formal budget amendment or reallocation of remaining funds.
+**Recommended Actions**
+1.  **Immediate Stakeholder Alignment:** Conduct an emergency review with key stakeholders to address concerns and reset delivery expectations.
+2.  **Resource Escalation:** Formally escalate the unavailability of client resources to leadership to facilitate rapid resolution.
+3.  **Scope Freeze:** Implement a strict change-control process to halt scope creep on Module B.
+4.  **Recovery Roadmap:** Develop a re-baselined project plan that accounts for current velocity and identifies critical path tasks for immediate prioritization.
 
-### Missing Information
-There is no significant missing information; the data provided is sufficient to confirm the current status and risks.
+**Missing Information**
+None. The provided data is sufficient to explain the current project health status.
 
 ===========================================

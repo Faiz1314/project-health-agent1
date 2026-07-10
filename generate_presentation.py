@@ -84,9 +84,30 @@ Generate exactly 6 slides:
     text = response.text.strip()
     if text.startswith("```json"):
         text = text[7:]
+    if text.startswith("```"):
+        text = text[3:]
     if text.endswith("```"):
         text = text[:-3]
-    return json.loads(text.strip())
+    text = text.strip()
+
+    # Try parsing directly first
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+
+    # If that fails, find the first complete JSON object
+    brace_count = 0
+    start = text.index("{")
+    for i in range(start, len(text)):
+        if text[i] == "{":
+            brace_count += 1
+        elif text[i] == "}":
+            brace_count -= 1
+        if brace_count == 0:
+            return json.loads(text[start:i + 1])
+
+    raise ValueError("Could not parse valid JSON from Gemini response")
 
 
 def add_title_slide(prs, title, subtitle):

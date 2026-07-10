@@ -15,5 +15,13 @@
       "title": "Scope creep on module B",
       "severity": "medium"
     }
-  ]
+  ],
+  "stakeholderFeedback": [
+    "This project is completely off track and we are losing confidence.",
+    "The budget overrun is unacceptable. We need immediate corrective action.",
+    "Communication has been poor and expectations are not being met."
+  ],
+  "plannedTasks": 60,
+  "completedTasks": 20,
+  "teamSize": 3
 }

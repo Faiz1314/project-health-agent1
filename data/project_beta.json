@@ -11,5 +11,13 @@
       "title": "API Dependency Delayed",
       "severity": "medium"
     }
-  ]
+  ],
+  "stakeholderFeedback": [
+    "We are concerned about the timeline slipping further.",
+    "The vendor situation needs to be resolved quickly.",
+    "Overall the team is capable but the delays are frustrating."
+  ],
+  "plannedTasks": 80,
+  "completedTasks": 55,
+  "teamSize": 8
 }

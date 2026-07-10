@@ -13,5 +13,14 @@
       "title":"Vendor Delay",
       "severity":"medium"
     }
-  ]
+  ],
+
+  "stakeholderFeedback": [
+    "The team is doing okay but the vendor delay is worrying.",
+    "Budget looks fine, but we need the timeline back on track."
+  ],
+
+  "plannedTasks": 40,
+  "completedTasks": 32,
+  "teamSize": 6
 }

@@ -6,15 +6,16 @@ This framework establishes a standardized, automated methodology for assessing a
 ---
 
 ## 2. Core Health Indicators
-The Project Health Reporting Agent evaluates five core dimensions of project delivery:
+The Project Health Reporting Agent evaluates six core dimensions of project delivery:
 
 | Indicator | Metric Definition | Scoring Logic | Weight |
 | :--- | :--- | :--- | :--- |
-| **Schedule Slippage** | $\frac{\text{Actual Duration} - \text{Planned Duration}}{\text{Planned Duration}} \times 100$ | $\le 0\% \to 100$<br>$\le 5\% \to 90$<br>$\le 10\% \to 75$<br>$\le 15\% \to 50$<br>$\le 20\% \to 25$<br>$> 20\% \to 0$ | **30%** |
+| **Schedule Slippage** | $\frac{\text{Actual Duration} - \text{Planned Duration}}{\text{Planned Duration}} \times 100$ | $\le 0\% \to 100$<br>$\le 5\% \to 90$<br>$\le 10\% \to 75$<br>$\le 15\% \to 50$<br>$\le 20\% \to 25$<br>$> 20\% \to 0$ | **20%** |
 | **Budget Burn** | $\frac{\text{Actual Spend}}{\text{Planned Budget}} \times 100$ | $\le 90\% \to 100$ (Underspend/Target)<br>$\le 100\% \to 80$ (On Budget)<br>$\le 110\% \to 50$ (Minor Overspend)<br>$> 110\% \to 20$ (Major Overrun) | **20%** |
-| **Milestone Health** | $\frac{\text{Completed Milestones}}{\text{Total Milestones}} \times 100$ | $\ge 90\% \to 100$<br>$\ge 75\% \to 75$<br>$\ge 50\% \to 50$<br>$< 50\% \to 25$ | **25%** |
-| **Blockers** | Penalty based on active blocker severity | Base score of 100 points minus:<br>• Low Severity Blocker: -10 points<br>• Medium Severity Blocker: -20 points<br>• High Severity Blocker: -40 points | **25%** |
-| **Stakeholder Sentiment** | Qualitative rating (Positive/Neutral/Negative) | *Integrated into the AI reasoning layer to contextualize the status and adjust risk levels.* | *Qualitative Context* |
+| **Milestone Health** | $\frac{\text{Completed Milestones}}{\text{Total Milestones}} \times 100$ | $\ge 90\% \to 100$<br>$\ge 75\% \to 75$<br>$\ge 50\% \to 50$<br>$< 50\% \to 25$ | **15%** |
+| **Blockers** | Penalty based on active blocker severity | Base score of 100 points minus:<br>• Low Severity Blocker: -10 points<br>• Medium Severity Blocker: -20 points<br>• High Severity Blocker: -40 points | **20%** |
+| **Stakeholder Sentiment** | AI-powered NLP sentiment classification of stakeholder feedback | Gemini classifies each feedback entry as:<br>• Positive → 100<br>• Neutral → 60<br>• Negative → 20<br>Final score = average across all entries | **15%** |
+| **Team Velocity** | $\frac{\text{Completed Tasks}}{\text{Planned Tasks}} \times 100$ | $\ge 95\% \to 100$<br>$\ge 80\% \to 85$<br>$\ge 60\% \to 60$<br>$\ge 40\% \to 35$<br>$< 40\% \to 10$<br>Small team (≤3) bonus: +5<br>Large team (≥10) penalty: -5 | **10%** |
 
 ---
 

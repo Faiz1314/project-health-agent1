@@ -6,5 +6,13 @@
   "actualSpend": 130000,
   "completedMilestones": 9,
   "totalMilestones": 10,
-  "blockers": []
+  "blockers": [],
+  "stakeholderFeedback": [
+    "The team has been delivering consistently and communication is excellent.",
+    "Very happy with the progress so far, looking forward to the final milestone.",
+    "No complaints, the project is running smoothly."
+  ],
+  "plannedTasks": 50,
+  "completedTasks": 48,
+  "teamSize": 5
 }

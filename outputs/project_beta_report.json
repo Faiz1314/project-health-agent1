@@ -12,16 +12,26 @@
         "title": "API Dependency Delayed",
         "severity": "medium"
       }
-    ]
+    ],
+    "stakeholderFeedback": [
+      "We are concerned about the timeline slipping further.",
+      "The vendor situation needs to be resolved quickly.",
+      "Overall the team is capable but the delays are frustrating."
+    ],
+    "plannedTasks": 80,
+    "completedTasks": 55,
+    "teamSize": 8
   },
-  "score": 71.0,
+  "score": 63.5,
   "rag": "AMBER",
   "confidence": 100,
   "metrics": {
     "schedule": 75,
     "budget": 80,
     "milestone": 50,
-    "blockers": 80
+    "blockers": 80,
+    "sentiment": 20.0,
+    "velocity": 60
   },
-  "explanation": "### Executive Summary\nProject Beta is currently rated **AMBER** with an overall health score of 71.0. While the project remains within its planned budget, schedule slippage and delayed milestone completion are negatively impacting delivery performance.\n\n### Reasoning\nThe AMBER status is driven primarily by the milestone metric (50), indicating that 30% of project milestones remain outstanding despite the project exceeding its planned duration of 120 days by 12 days. Although budget utilization is efficient ($195,000 spent against a $200,000 budget), the inability to close key deliverables is preventing the project from reaching a \"Green\" status.\n\n### Key Risks\n*   **Schedule Variance:** The project has already exceeded the planned 120-day duration, creating pressure on the remaining timeline.\n*   **API Dependency:** A medium-severity blocker regarding an external API dependency is currently active, which presents a direct risk to completing the final three milestones.\n\n### Recommended Actions\n1.  **Dependency Management:** Escalate the API dependency blocker to the relevant stakeholder to secure a firm resolution date.\n2.  **Milestone Recovery:** Conduct a review of the final three milestones to identify if any can be completed in parallel to compress the remaining schedule.\n3.  **Resource Reallocation:** Evaluate if remaining budget capacity can be utilized to accelerate the resolution of the API blocker or support overdue milestones.\n4.  **Baseline Re-alignment:** Formalize a revised completion date to provide stakeholders with an accurate expectation for project delivery.\n\n### Missing Information\nThere is no missing information; the provided data is sufficient to explain the current AMBER status and associated project risks."
+  "explanation": "### Executive Summary\nProject Beta is currently flagged as **AMBER**. While the project remains under budget, schedule slippage and low stakeholder sentiment regarding progress and vendor management necessitate immediate management intervention to prevent further degradation.\n\n### Reasoning\nThe AMBER status reflects a combination of schedule variance and poor stakeholder perception. Despite a healthy budget utilization (80/100), the project has exceeded its planned duration of 120 days by 12 days. Milestone completion is lagging (50/100), with only 7 of 10 milestones achieved. Low sentiment scores (20/100) are driven by concerns over timeline slippage and the urgency of resolving current vendor dependencies.\n\n### Key Risks\n*   **Schedule Slippage:** The project is already 12 days past its planned duration, with 25 tasks remaining.\n*   **External Dependency:** The \"API Dependency Delayed\" blocker, currently rated medium severity, threatens to further stall milestone delivery.\n*   **Stakeholder Trust:** Persistent frustration regarding vendor management and timeline performance poses a risk to project sponsorship and support.\n\n### Recommended Actions\n*   **Resolve API Blocker:** Prioritize technical resolution of the API dependency to unblock critical path tasks.\n*   **Vendor Review:** Conduct an urgent performance review with the vendor to address the feedback regarding their impact on the timeline.\n*   **Re-baseline Schedule:** Produce a realistic delivery plan for the remaining 25 tasks to align stakeholder expectations with current team velocity.\n*   **Communication Cadence:** Increase transparency with stakeholders by providing a direct remediation plan for the identified delays.\n\n### Missing Information\nThere are no significant missing data points; the current information is sufficient for this assessment."
 }
