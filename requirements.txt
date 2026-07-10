@@ -1,1 +1,2 @@
 google-genai>=1.0.0
+python-pptx>=1.0.0

@@ -16,11 +16,18 @@ from pathlib import Path
 from src.agent import run_agent
 
 
+import sys
+
 async def main():
     try:
+        # Determine the project path
+        if len(sys.argv) > 1:
+            project_path = Path(sys.argv[1])
+        else:
+            project_path = Path(__file__).parent / "src" / "sample.json"
+
         # Read the project plan
-        sample_path = Path(__file__).parent / "src" / "sample.json"
-        with open(sample_path, "r") as f:
+        with open(project_path, "r") as f:
             project = json.load(f)
 
         # Run the agent

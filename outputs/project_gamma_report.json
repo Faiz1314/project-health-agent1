@@ -1,0 +1,31 @@
+{
+  "project": {
+    "name": "Project Gamma",
+    "plannedDurationDays": 60,
+    "actualDurationDays": 80,
+    "plannedBudget": 80000,
+    "actualSpend": 110000,
+    "completedMilestones": 4,
+    "totalMilestones": 10,
+    "blockers": [
+      {
+        "title": "Client resource unavailable",
+        "severity": "high"
+      },
+      {
+        "title": "Scope creep on module B",
+        "severity": "medium"
+      }
+    ]
+  },
+  "score": 20.25,
+  "rag": "RED",
+  "confidence": 100,
+  "metrics": {
+    "schedule": 0,
+    "budget": 20,
+    "milestone": 25,
+    "blockers": 40
+  },
+  "explanation": "### Executive Summary\nProject Gamma is currently rated **RED** due to significant schedule delays and budget overruns. Immediate management intervention is required to address resource availability and scope instability to prevent further slippage.\n\n### Reasoning\nThe project is currently Red because it has exceeded its planned 60-day duration by 20 days and its $80,000 budget by $30,000. With only 4 of 10 milestones completed, the pace of delivery is insufficient. The combination of high-severity resource constraints and ongoing scope creep on module B has severely degraded performance across all tracked metrics, particularly schedule and budget.\n\n### Key Risks\n*   **Resource Unavailability:** The high-severity blocker regarding missing client resources is preventing progress on critical project tasks.\n*   **Scope Instability:** Uncontrolled expansion of Module B is driving both the budget deficit and the schedule extension.\n*   **Delivery Momentum:** Only 40% of milestones are complete, despite the project duration being 33% longer than initially planned.\n\n### Recommended Actions\n1.  **Escalate Resource Blockers:** Facilitate an immediate meeting with client leadership to secure the necessary resources or formally adjust project timelines.\n2.  **Conduct Scope Review:** Perform a Change Control Board (CCB) review of Module B to baseline requirements and prevent further scope creep.\n3.  **Re-baseline Project Plan:** Develop a recovery schedule that reflects the current resource constraints and remaining milestone requirements.\n4.  **Financial Review:** Assess if the $110,000 current spend necessitates a formal budget amendment or reallocation of remaining funds.\n\n### Missing Information\nThere is no significant missing information; the data provided is sufficient to confirm the current status and risks."
+}

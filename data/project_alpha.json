@@ -1,0 +1,10 @@
+{
+  "name": "Project Alpha",
+  "plannedDurationDays": 90,
+  "actualDurationDays": 90,
+  "plannedBudget": 150000,
+  "actualSpend": 130000,
+  "completedMilestones": 9,
+  "totalMilestones": 10,
+  "blockers": []
+}

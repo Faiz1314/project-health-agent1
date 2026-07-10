@@ -1,0 +1,15 @@
+{
+  "name": "Project Beta",
+  "plannedDurationDays": 120,
+  "actualDurationDays": 132,
+  "plannedBudget": 200000,
+  "actualSpend": 195000,
+  "completedMilestones": 7,
+  "totalMilestones": 10,
+  "blockers": [
+    {
+      "title": "API Dependency Delayed",
+      "severity": "medium"
+    }
+  ]
+}

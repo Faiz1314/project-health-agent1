@@ -30,4 +30,4 @@ pip install -r requirements.txt --quiet
 
 # Run the agent
 echo "Running Project Health Agent..."
-python3 main.py
+python3 main.py "$@"

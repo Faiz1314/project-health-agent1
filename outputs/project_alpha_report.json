@@ -1,0 +1,22 @@
+{
+  "project": {
+    "name": "Project Alpha",
+    "plannedDurationDays": 90,
+    "actualDurationDays": 90,
+    "plannedBudget": 150000,
+    "actualSpend": 130000,
+    "completedMilestones": 9,
+    "totalMilestones": 10,
+    "blockers": []
+  },
+  "score": 100.0,
+  "rag": "GREEN",
+  "confidence": 100,
+  "metrics": {
+    "schedule": 100,
+    "budget": 100,
+    "milestone": 100,
+    "blockers": 100
+  },
+  "explanation": "### Executive Summary\nProject Alpha is currently assessed as **GREEN**, indicating it is performing exactly as planned across all primary delivery metrics. The project is effectively nearing completion, with the majority of milestones achieved and financial expenditure remaining well within the allocated budget.\n\n### Reasoning\nThe Green status is driven by a perfect performance score across schedule, budget, milestone completion, and blocker management metrics. With 90 of 90 planned days utilized and 9 of 10 milestones completed, the project demonstrates high operational stability and efficiency. Current spending of $130,000 against a $150,000 budget confirms the project is fiscally healthy as it enters the final phase.\n\n### Key Risks\nThere are no significant risks or blockers currently identified that threaten the project\u2019s successful delivery.\n\n### Recommended Actions\n1. **Finalize Deliverables:** Execute the remaining final milestone to reach formal project closure.\n2. **Transition Planning:** Initiate handover processes to the operational or support teams to ensure a smooth transition of the project output.\n3. **Budget Reconciliation:** Conduct a final review of outstanding invoices to ensure the remaining $20,000 budget buffer is managed appropriately during project closeout.\n4. **Lessons Learned:** Facilitate a project retrospective to capture best practices for future initiatives.\n\n### Missing Information\nThere is no missing information; the project status is fully assessed with 100% confidence."
+}

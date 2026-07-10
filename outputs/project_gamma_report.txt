@@ -1,0 +1,37 @@
+========== PROJECT HEALTH REPORT ==========
+
+Project     : Project Gamma
+RAG Status  : RED
+Score       : 20.25
+Confidence  : 100%
+
+Metric Scores:
+  Metric             Score
+  --------------- --------
+  schedule               0
+  budget                20
+  milestone             25
+  blockers              40
+
+Executive Summary:
+### Executive Summary
+Project Gamma is currently rated **RED** due to significant schedule delays and budget overruns. Immediate management intervention is required to address resource availability and scope instability to prevent further slippage.
+
+### Reasoning
+The project is currently Red because it has exceeded its planned 60-day duration by 20 days and its $80,000 budget by $30,000. With only 4 of 10 milestones completed, the pace of delivery is insufficient. The combination of high-severity resource constraints and ongoing scope creep on module B has severely degraded performance across all tracked metrics, particularly schedule and budget.
+
+### Key Risks
+*   **Resource Unavailability:** The high-severity blocker regarding missing client resources is preventing progress on critical project tasks.
+*   **Scope Instability:** Uncontrolled expansion of Module B is driving both the budget deficit and the schedule extension.
+*   **Delivery Momentum:** Only 40% of milestones are complete, despite the project duration being 33% longer than initially planned.
+
+### Recommended Actions
+1.  **Escalate Resource Blockers:** Facilitate an immediate meeting with client leadership to secure the necessary resources or formally adjust project timelines.
+2.  **Conduct Scope Review:** Perform a Change Control Board (CCB) review of Module B to baseline requirements and prevent further scope creep.
+3.  **Re-baseline Project Plan:** Develop a recovery schedule that reflects the current resource constraints and remaining milestone requirements.
+4.  **Financial Review:** Assess if the $110,000 current spend necessitates a formal budget amendment or reallocation of remaining funds.
+
+### Missing Information
+There is no significant missing information; the data provided is sufficient to confirm the current status and risks.
+
+===========================================

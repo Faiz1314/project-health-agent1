@@ -1,0 +1,19 @@
+{
+  "name": "Project Gamma",
+  "plannedDurationDays": 60,
+  "actualDurationDays": 80,
+  "plannedBudget": 80000,
+  "actualSpend": 110000,
+  "completedMilestones": 4,
+  "totalMilestones": 10,
+  "blockers": [
+    {
+      "title": "Client resource unavailable",
+      "severity": "high"
+    },
+    {
+      "title": "Scope creep on module B",
+      "severity": "medium"
+    }
+  ]
+}

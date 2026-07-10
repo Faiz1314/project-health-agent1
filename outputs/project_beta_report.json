@@ -1,0 +1,27 @@
+{
+  "project": {
+    "name": "Project Beta",
+    "plannedDurationDays": 120,
+    "actualDurationDays": 132,
+    "plannedBudget": 200000,
+    "actualSpend": 195000,
+    "completedMilestones": 7,
+    "totalMilestones": 10,
+    "blockers": [
+      {
+        "title": "API Dependency Delayed",
+        "severity": "medium"
+      }
+    ]
+  },
+  "score": 71.0,
+  "rag": "AMBER",
+  "confidence": 100,
+  "metrics": {
+    "schedule": 75,
+    "budget": 80,
+    "milestone": 50,
+    "blockers": 80
+  },
+  "explanation": "### Executive Summary\nProject Beta is currently rated **AMBER** with an overall health score of 71.0. While the project remains within its planned budget, schedule slippage and delayed milestone completion are negatively impacting delivery performance.\n\n### Reasoning\nThe AMBER status is driven primarily by the milestone metric (50), indicating that 30% of project milestones remain outstanding despite the project exceeding its planned duration of 120 days by 12 days. Although budget utilization is efficient ($195,000 spent against a $200,000 budget), the inability to close key deliverables is preventing the project from reaching a \"Green\" status.\n\n### Key Risks\n*   **Schedule Variance:** The project has already exceeded the planned 120-day duration, creating pressure on the remaining timeline.\n*   **API Dependency:** A medium-severity blocker regarding an external API dependency is currently active, which presents a direct risk to completing the final three milestones.\n\n### Recommended Actions\n1.  **Dependency Management:** Escalate the API dependency blocker to the relevant stakeholder to secure a firm resolution date.\n2.  **Milestone Recovery:** Conduct a review of the final three milestones to identify if any can be completed in parallel to compress the remaining schedule.\n3.  **Resource Reallocation:** Evaluate if remaining budget capacity can be utilized to accelerate the resolution of the API blocker or support overdue milestones.\n4.  **Baseline Re-alignment:** Formalize a revised completion date to provide stakeholders with an accurate expectation for project delivery.\n\n### Missing Information\nThere is no missing information; the provided data is sufficient to explain the current AMBER status and associated project risks."
+}
